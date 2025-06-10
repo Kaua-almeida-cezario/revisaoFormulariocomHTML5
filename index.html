@@ -34,7 +34,33 @@
         <input type="tel" id="telefone" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}">
         <label for="estados">Selecione um estado</label>
         <select id="estados">
-            <option
+            <option>SC</option>
+            <option>RS</option>
+            <option selected>PR</option>
+        </select><br/><br/><br/>
+
+        <h1>Formulário mais organizado</h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nomeAluno">Nome</label>
+            <input type="text" id="nomeAluno"><br/>
+            <label for="idadeAluno">Idade</label>
+            <input type="number" id="idadeAluno"><br/>
+            <label for="telefoneAluno">Telefone</label>
+            <input type="tel" id="telefoneAluno">
+        </fieldset>
+        
+        <textarea rows="20" cols="30">
+            Fale um pouco sobre você!
+        </textarea><br/>
+        <label for="escola">Selecione a sua escola</label>
+        <input type="text" id="escola" list="escolas">
+        <datalist id="escolas">
+            <option>São Cristovão</option>
+            <option>Eleodoro</option>
+            <option>Santa Felicidade</option>
+            <option>Mario Quintana</option>
+        </datalist><br/>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js " integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
